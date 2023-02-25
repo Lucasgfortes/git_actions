@@ -26,7 +26,7 @@ jobs:
        name: production-files
        path: ./build
 deploy:
-   name: Deploy
+   name: deploy
    needs: build
    runs-on: ubuntu-latest
    if: github.ref == 'refs/heads/main'
